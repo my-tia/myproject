@@ -70,4 +70,3 @@ def calculate(request):
 
 
 
-
