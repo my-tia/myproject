@@ -154,6 +154,7 @@ div#myiframe_position1 iframe{
 <body>
 
 <title>calculate petrol for your car</title> 
+
 <div class ="block-1">
     <h4>Note</h4>
     <p>Source :         {{save_source}}</p>
@@ -163,6 +164,10 @@ div#myiframe_position1 iframe{
     <p>cost :    {{save_cost}} ฿</p>
 </div>
 <div class = "dark-matter">
+<form action="/" method="POST">
+  {% csrf_token %}
+<input type="submit" class="submit" name="back_btn" value="Back" /> 
+</form></br>
 <form action="" method="POST">
 {% csrf_token %}
     <h1>Calculate Petrol</h1>
@@ -227,6 +232,5 @@ div#myiframe_position1 iframe{
 </div>
 
 </html>
-
 
 
