@@ -25,7 +25,7 @@ SECRET_KEY = '32nh6apyfac)vh^ktn4=x6j2uku54w&0^+95^8o&_ss)fi&rhi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['panisa.pythonanywhere.com',]
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'import_export',
+
 ]
 
 MIDDLEWARE = [
