@@ -72,7 +72,8 @@ opacity: 0.8;
 <body>
 <img src="http://cdn.pcwallart.com/images/city-road-background-wallpaper-3.jpg" >
 
- <form action="{% url 'calpetrol:cal' %}" method="POST">
+<form action="/cal/" method="POST">
+
   {% csrf_token %}
 <br><br><br><br><br><br><br><br><br><br><br>
      <h1>คำนวณราคาน้ำมันระหว่างจังหวัดในประเทศไทย</h1>
