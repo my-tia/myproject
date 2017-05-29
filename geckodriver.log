@@ -1,0 +1,107 @@
+1493610415411	geckodriver	INFO	Listening on 127.0.0.1:49569
+1493610416494	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.Us3SZPvhHgex
+1493610416495	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1493610416498	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41877
+1493610419968	Marionette	INFO	Listening on port 41877
+1493610420090	Marionette	WARN	TLS certificate errors will be ignored for this session
+1493610502625	geckodriver	INFO	Listening on 127.0.0.1:37233
+1493610503733	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.pItKvOwir7IL
+1493610503733	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1493610503736	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35093
+1493610507165	Marionette	INFO	Listening on port 35093
+1493610507267	Marionette	WARN	TLS certificate errors will be ignored for this session
+1493610618199	geckodriver	INFO	Listening on 127.0.0.1:45271
+1493610618311	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.V3gCdUC2vSaq
+1493610618312	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1493610618315	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44399
+1493610623086	Marionette	INFO	Listening on port 44399
+1493610623167	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1493611737061	geckodriver	INFO	Listening on 127.0.0.1:49123
+1493611738192	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.v477Lq7zdu6e
+1493611738193	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1493611738236	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43387
+1493611747662	Marionette	INFO	Listening on port 43387
+1493611748046	Marionette	WARN	TLS certificate errors will be ignored for this session
+1493611750859	Marionette	INFO	New connections will no longer be accepted
+[Child 4988] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-SmsXzF/firefox-53.0+build6/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1493611783329	geckodriver	INFO	Listening on 127.0.0.1:50053
+1493611783460	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.zIr4k1W18Qj0
+1493611783460	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1493611783462	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42559
+1493611788001	Marionette	INFO	Listening on port 42559
+1493611788083	Marionette	WARN	TLS certificate errors will be ignored for this session
+1493611789018	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 5115] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-SmsXzF/firefox-53.0+build6/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+ExceptionHandler::GenerateDump cloned child 7545
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+console.error: 
+  Message: Error: SessionFile is closed
+  Stack:
+    write@resource://app/modules/sessionstore/SessionFile.jsm:315:29
+write@resource://app/modules/sessionstore/SessionFile.jsm:76:12
+_writeState@resource://app/modules/sessionstore/SessionSaver.jsm:265:12
+_saveState@resource://app/modules/sessionstore/SessionSaver.jsm:236:12
+_saveStateAsync@resource://app/modules/sessionstore/SessionSaver.jsm:249:5
+runDelayed/this._timeoutID<@resource://app/modules/sessionstore/SessionSaver.jsm:147:40
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+ExceptionHandler::GenerateDump cloned child 7563
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
