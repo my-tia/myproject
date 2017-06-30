@@ -11,16 +11,16 @@ html,body{
 img{
     min-height:100%;
     min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
+    height: auto;
+    width: auto;
+    position: absolute;
     top:-100%; bottom:-100%;
     left:-100%; right:-100%;
-    margin:auto;
+    margin: auto;
     opacity: 0.5; 
 }
 
-.button {
+.buttonstart {
   height:50px; 
   width:100px; 
   margin: -20px -50px; 
@@ -39,15 +39,43 @@ img{
 
 }
 
-.button:hover {background-color: #e7e7e7;
+.buttonstart:hover {background-color: #e7e7e7;
                 opacity: 1}
 
-.button:active {
+.buttonstart:active {
   background-color: white;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
+.buttonsign {
+  height:30px; 
+  width:80px; 
+  margin: 20px 0px; 
+  position: relative;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+ 
+
+}
+
+.buttonsign:hover {background-color: #e7e7e7;
+                opacity: 1;
+color: black;}
+
+.buttonsign:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 h1 { color: white;
  font-family: 'Helvetica Neue', sans-serif; 
@@ -71,14 +99,19 @@ opacity: 0.8;
 
 <body>
 <img src="http://cdn.pcwallart.com/images/city-road-background-wallpaper-3.jpg" >
+<form action="/login/" method="POST">
+  {% csrf_token %}
+
+     <button class="button buttonsign">เข้าสู่ระบบ</button>
+</form>
 
 <form action="/cal/" method="POST">
 
   {% csrf_token %}
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
      <h1>คำนวณราคาน้ำมันระหว่างจังหวัดในประเทศไทย</h1>
 <h1>Calculate petrol</h1><br><br>
-     <button class="button">เริ่ม</button><br><br><br><br>
+     <button class="button buttonstart">เริ่ม</button><br><br><br><br>
 </form>
      <h1>About me</h1>
     <p>เว็บไซต์สร้างเป็นแบบ demo ในรายวิชา Building Software II</p>
