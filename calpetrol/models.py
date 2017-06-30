@@ -1,24 +1,36 @@
 from django.db import models
 
-class Distance(models.Model):
-    source_text = models.CharField(max_length=200)
-    destination_text = models.CharField(max_length=200)
-    distance = models.IntegerField(default=0)
 
+class Classification(models.Model):
+   
+    class_text = models.CharField(max_length=200,default='class_quiz')
+    #date = models.DateField(("Date"), default=datetime.date.today)
+    
     def __str__(self):
-        return self.source_text
+        return self.class_text
+
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    choice_correct = models.CharField(max_length=200)
+    classification = models.ForeignKey(Classification, on_delete=models.CASCADE)
+    #date = models.DateField(("Date"), default=datetime.date.today)
+    pub_date = models.DateTimeField('date published')
     def __str__(self):
-        return self.destination_text
-    def __int__(self):
-        return self.distance
+        return self.question_text
+    def was_published_recently(self):
+        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
-class Car(models.Model):
-    car_type = models.CharField(max_length=200)
-    car_use = models.IntegerField(default=0)
+class Choice(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    choice_text = models.CharField(max_length=200)
     def __str__(self):
-        return self.car_type
-
-
-# Create your models here.
-
-
+        return self.choice_text
+ 
+class Player(models.Model):
+    name_player = models.CharField(max_length=200)
+    score = models.IntegerField(default=0)
+    classification = models.ForeignKey(Classification, on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return self.name_player
