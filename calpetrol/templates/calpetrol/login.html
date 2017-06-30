@@ -1,0 +1,16 @@
+
+<title>login</title>
+<form action="/" method="POST">
+  {% csrf_token %}
+<input type="submit" value="Back" /> 
+</form>
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+
+<a href="/signup/">don't have account?</a>
+
+
